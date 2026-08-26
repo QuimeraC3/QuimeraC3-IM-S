@@ -88,7 +88,6 @@
 
         /* ENCABEZADO CON IMAGEN DE FONDO */
         header {
-            /* Reemplazar 'Quimera.jpeg' por el nombre de tu archivo de imagen */
             background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.10)), url('Quimera.jpeg');
             background-size: cover;
             background-position: center;
@@ -99,7 +98,9 @@
         }
 
         .header-tag {
-            display: inline-block;
+            display: block; /* Modificado: permite márgenes automáticos */
+            width: fit-content; /* Modificado: ajusta el contenedor al ancho del texto */
+            margin: 0 auto 1.25rem auto; /* Modificado: centra horizontalmente la etiqueta */
             background-color: var(--primary);
             color: #ffffff;
             font-size: 0.8rem;
@@ -108,7 +109,6 @@
             text-transform: uppercase;
             padding: 0.35rem 1.2rem;
             border-radius: 9999px;
-            margin-bottom: 1.25rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
         }
 
@@ -120,6 +120,7 @@
             margin-bottom: 0.75rem;
             text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
             color: #ffffff;
+            text-align: center; /* Modificado: centra la frase principal h1 */
         }
 
         header p {
